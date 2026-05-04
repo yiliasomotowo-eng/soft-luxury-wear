@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    body {
+      font-family: Arial;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .products {
+        background: #111;
+        padding: 15px;
+       border-radius: 10px;
+       width: 250px;
+       box-shadow: 0 0 10px rgba(225, 255, 255, 0.1);
+    }
+
+    .products img {
+        width: 100%;
+       border-radius: 10px;
+    }
+
+    button {
+      backgparound: white;
+      border: none;
+      padding: 10px;
+      color: black;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background-color: #gold;
+    }
+  </style>
+ </head>
+ <body>
+
+    <h1>wellcome to soft luxury</h1>
+    <p>Welcome to our luxurious soft wears store!</p>
+
+    <div class="products">
+     
+      <div class="product">
+     <img src="image/soft-luxury-logo.jpeg" width="300">
+    <button onclick="showmessage()">we offer premium quality wears</button>
+ </div>
+
+
+    <div class="product">
+    <img src="image/soft-top.jpeg" width="300">
+    <p>soft-top</p>
+    <p>$ 35</p>
+    <button onclick="buy_item('luxury-top')">Buy Now</button>
+ </div>
+ 
+    <div class="product">
+    <img src="image/hoodie.jpeg" width="300">
+    <p>hoodies</p>
+    <p>$ 125</p>
+    <button onclick="buy_item('Hoodies')">Buy Now</button>
+ </div>
+
+ <div class="product">
+    <img src="image/soft-socks.jpeg" width="300">
+    <p>soft-socks</p>
+    <p>$ 10</p>
+    <button onclick="buy_item('soft-socks')">Buy Now</button>
+ </div>
+
+ <div class="product">
+    <img src="image/sweat-shirt.jpeg" width="300">
+    <p>sweat-shirt</p>
+    <p>$ 70</p>
+    <button onclick="buy_item('sweat-shirt')">Buy Now</button>
+ </div>
+<script>
+    function showmessage() {
+        alert("Welcome to our luxurious soft wears store 👋");
+    }
+    function buy item(item) {
+        alert("you selected: + item")
+        }
+function orderNow(product) {
+    let phone = "2349028000112"; //
+    let message = "hello i want to buy this " + product;
+    let url = "https://wa.me/" = phone + "?text=" + encodeURIComponent(message);
+    window.open(url, "blank");
+    }
+</script>
+</body>
+</html>
+
